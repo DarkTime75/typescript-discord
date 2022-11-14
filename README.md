@@ -23,4 +23,5 @@ Yet another discord bot template with typescript
     "#locales/*": "./locales/*"
   }
 ```
+- To deploy your slash commands to discord, run `npm run commands:deploy`
 - Run `npm start` to run the bot
