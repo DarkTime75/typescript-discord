@@ -11,7 +11,7 @@ export default class extends BaseCommand<typeof pingCommand> {
       embeds: [
         {
           description: `🏓 **Pong!**\nLatency: ${this.client.ws.ping}`,
-          color: 0x2f3136,
+          color: this.client.Colors.Invisible,
         },
       ],
     });

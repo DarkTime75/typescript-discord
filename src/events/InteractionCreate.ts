@@ -20,7 +20,7 @@ export default class extends BaseEvent<typeof event> {
             {
               title: "An Error Occurred!",
               description: "**Error Message:**\n> " + subError,
-              color: 0x2f3136,
+              color: this.client.Colors.Invisible,
             },
           ],
         });
@@ -32,7 +32,6 @@ export default class extends BaseEvent<typeof event> {
         : customId;
       const button = this.client.buttons.get(requiredCustomId);
       if (!button) return;
-      const Key = customId.split(":")[2];
       await button.button(interaction);
     }
   }

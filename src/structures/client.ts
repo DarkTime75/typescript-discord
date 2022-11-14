@@ -19,7 +19,9 @@ class MyClient<Ready extends boolean = boolean> extends Client<Ready> {
   public events: Collection<EventInterface["EventName"], EventInterface> =
     new Collection();
   public buttons: Collection<Button["name"], Button> = new Collection();
-  public buttonCache: Collection<string, unknown> = new Collection();
+  public Colors = {
+    Invisible: 0x2f3136,
+  };
 
   constructor(options: ClientOptions) {
     super(options);

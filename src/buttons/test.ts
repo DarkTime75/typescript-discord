@@ -15,7 +15,7 @@ export default class extends BaseCommand<typeof TestButton> {
         embeds: [
           {
             description: t("errors.interactions.unauthorized_member"),
-            color: 0x2f3136,
+            color: this.client.Colors.Invisible,
           },
         ],
         ephemeral: true,
