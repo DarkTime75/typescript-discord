@@ -1,5 +1,5 @@
 # typescript-discord
-Yet another discord bot template with typescript
+Yet another Discord Bot Template with TypeScript
 
 # Steps to Follow
 - Rename `.env.example` to `.env` and fill the required details
@@ -23,5 +23,5 @@ Yet another discord bot template with typescript
     "#locales/*": "./locales/*"
   }
 ```
-- To deploy your slash commands to discord, run `npm run commands:deploy`
+- To deploy your slash commands, run `npm run commands:deploy`
 - Run `npm start` to run the bot
