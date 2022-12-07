@@ -1,8 +1,7 @@
 import { GatewayIntentBits } from "discord.js";
 import chalk from "chalk";
-import { config } from "dotenv";
+import "dotenv/config";
 import MyClient from "#src/structures/client.js";
-config();
 (async () => {
   const client = new MyClient<boolean>({
     intents: [
